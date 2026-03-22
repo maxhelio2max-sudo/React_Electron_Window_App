@@ -50,6 +50,17 @@ describe("angle", () => {
 });
 
 
+// ГРУППА vector
+describe("vector operations", () => {
+
+  test("normalize vector", () => {
+    const v = normalizeVector({fx:3, fy:4});
+    expect(Math.round(v.x * 10)/10).toBe(0.6);
+  });
+
+});
+
+
 // ===== ПАРАМЕТРИЗАЦИЯ =====
 describe("param tests", () => {
 
