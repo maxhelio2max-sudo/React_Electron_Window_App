@@ -43,6 +43,10 @@ describe("angle", () => {
     expect(Math.round(angle)).toBe(90);
   });
 
+  test("angle 180 degrees", () => {
+    const angle = computeAngle({x:1,y:0}, {x:-1,y:0});
+    expect(Math.round(angle)).toBe(180);
+  });
 });
 
 
